@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tribikram Adhikari | Personal Website</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+
+<!-- FontAwesome for Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<style>
+/* -------------------- BASE -------------------- */
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: 'Roboto', sans-serif; background:#f5f7fa; color:#333; line-height:1.6; }
+a { text-decoration:none; color:inherit; }
+
+/* -------------------- NAVBAR -------------------- */
+nav { width:100%; background:#fff; position:sticky; top:0; z-index:999; box-shadow:0 2px 8px rgba(0,0,0,0.1); }
+nav .container { display:flex; justify-content:space-between; align-items:center; padding:15px 20px; max-width:1000px; margin:0 auto; }
+nav .logo { font-family:'Poppins',sans-serif; font-size:1.5rem; font-weight:700; color:#3498db; }
+nav ul { display:flex; list-style:none; }
+nav ul li { margin-left:20px; }
+nav ul li a { color:#333; font-weight:500; transition:0.3s; }
+nav ul li a:hover { color:#3498db; }
+
+/* -------------------- HERO -------------------- */
+.hero { height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; 
+        background: linear-gradient(135deg, #667eea, #764ba2, #f5a623); color:#fff; padding:0 20px; }
+.hero h1 { font-family:'Poppins',sans-serif; font-size:3rem; margin-bottom:15px; text-shadow:1px 1px 4px rgba(0,0,0,0.3); }
+.hero p { font-size:1.5rem; margin-bottom:25px; font-weight:500; }
+.hero .buttons a { display:inline-block; margin:5px; padding:12px 25px; border-radius:50px; background:#fff; color:#764ba2; font-weight:600; transition:0.3s; }
+.hero .buttons a:hover { background:#764ba2; color:#fff; transform:scale(1.05); }
+
+/* -------------------- SECTIONS -------------------- */
+.container { max-width:1000px; margin:50px auto; padding:0 20px; }
+h2 { font-family:'Poppins',sans-serif; color:#2c3e50; font-size:2rem; margin-bottom:25px; text-align:center; }
+
+/* POSTS */
+.posts .post-card { background:#fff; padding:20px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.08); margin-bottom:20px; transition:0.3s; }
+.posts .post-card:hover { transform:translateY(-3px); }
+.posts .post-card h3 { font-family:'Poppins',sans-serif; color:#3498db; margin-bottom:10px; }
+.posts .post-card img { width:100%; border-radius:12px; margin-bottom:10px; }
+.posts .post-card p { font-size:1rem; }
+
+/* GALLERY */
+.gallery-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(120px,1fr)); gap:10px; }
+.gallery-grid img { width:100%; border-radius:12px; transition:transform 0.3s; }
+.gallery-grid img:hover { transform:scale(1.05); }
+
+/* VIDEOS / REELS */
+.videos-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; }
+.videos-grid iframe, .videos-grid video { width:100%; border-radius:12px; }
+
+/* SOCIAL LINKS */
+.social-links { text-align:center; }
+.social-links a { display:inline-block; margin:5px; padding:12px 18px; border-radius:10px; background:#3498db; color:#fff; font-weight:600; transition:0.3s; }
+.social-links a:hover { background:#764ba2; }
+
+/* ABOUT */
+.about { background:#fff; padding:30px 20px; border-radius:15px; box-shadow:0 4px 12px rgba(0,0,0,0.08); margin-bottom:50px; text-align:center; }
+.about p { font-size:1.1rem; line-height:1.5; }
+
+/* CONTACT */
+.contact a { display:block; background:#e5e7eb; color:#333; padding:12px; margin-bottom:10px; border-radius:10px; text-align:center; font-weight:600; transition:0.3s; }
+.contact a:hover { background:#3498db; color:#fff; }
+
+/* FOOTER */
+footer { text-align:center; padding:30px 20px; color:#888; margin-top:50px; border-top:1px solid #ddd; }
+
+/* MOBILE */
+@media(max-width:768px){ .hero h1{font-size:2.2rem;} .hero p{font-size:1.2rem;} nav ul{flex-direction:column;} nav ul li{margin:10px 0;} }
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="container">
+    <div class="logo">Tribikram Adhikari</div>
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#posts">Posts</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#videos">Videos</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="hero">
+  <h1>Tribikram Adhikari</h1>
+  <p>Work Hard, Shine Harder.</p>
+  <div class="buttons">
+    <a href="#contact">Contact Me</a>
+    <a href="#social">Follow Me</a>
+  </div>
+</section>
+
+<!-- POSTS -->
+<section id="posts" class="container posts">
+  <h2>Today's Posts 📰</h2>
+  <div class="post-card">
+    <h3>देश बिग्रियो, छोरो फर्केन? 🔥</h3>
+    <img src="post1.jpg" alt="Post Image">
+    <p>
+      देश बिग्रियो, छोरो फर्केन भन्छौ?<br>
+      कि<br>
+      छोरो बिग्रियो, देश फर्केन भन्छौ?<br>
+      बा' आमा हरु…<br><br>
+      यसपाली भोट नबिगार्नु।<br>
+      देश पनि बन्छ,<br>
+      छोरो पनि फर्कन्छ।<br><br>
+      <strong>#लोचन #Balenshah #RSP 🎉</strong>
+    </p>
+  </div>
+  <!-- Add more post-card divs here for new posts -->
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="container gallery">
+  <h2>Photo Gallery 📸</h2>
+  <div class="gallery-grid">
+    <img src="gallery1.jpg" alt="Gallery Image 1">
+    <img src="gallery2.jpg" alt="Gallery Image 2">
+    <img src="gallery3.jpg" alt="Gallery Image 3">
+    <img src="gallery4.jpg" alt="Gallery Image 4">
+  </div>
+</section>
+
+<!-- VIDEOS / REELS -->
+<section id="videos" class="container videos">
+  <h2>Videos / Reels 🎥</h2>
+  <div class="videos-grid">
+    <iframe src="https://www.tiktok.com/embed/yourvideo1" frameborder="0" allowfullscreen></iframe>
+    <iframe src="https://www.tiktok.com/embed/yourvideo2" frameborder="0" allowfullscreen></iframe>
+    <!-- Add more iframe or video tags for new videos -->
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA -->
+<section id="social" class="container social">
+  <h2>Follow Me 🌐</h2>
+  <div class="social-links">
+    <a href="https://www.facebook.com/share/1AaxG3Gr5u/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+    <a href="https://www.tiktok.com/@lochan069" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+    <a href="https://www.instagram.com/lochan069/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    <a href="https://wa.me/243828085706" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="container about">
+  <h2>About Me ✨</h2>
+  <p>
+    Hi, I’m Tribikram Adhikari (Lochan / Aryan) 👋<br>
+    I love sharing my thoughts, photos, memes, and daily adventures 🌍📸<br>
+    Exploring ideas 💡, capturing fun moments 🎉, and posting my daily vibes ✨<br>
+    This is my little corner on the web where you can see my posts, photos, videos, and more 🎥📷
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container contact">
+  <h2>Contact Me ✉️</h2>
+  <a href="mailto:info@tribikram.xyz">📧 Email</a>
+  <a href="https://wa.me/243828085706">💬 WhatsApp</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  &copy; 2026 Tribikram Adhikari | Personal Website
+</footer>
+
+</body>
+</html>
